@@ -1,6 +1,6 @@
 
 
-URxvt*background: #000000
+urxvt*background: [75]#000000
 URxvt*foreground: #cccaca
 
 URxvt*color0:  #000000
@@ -46,6 +46,6 @@ URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keyboard-select.clipboard
 URxvt.url-launcher: /var/lib/snapd/snap/bin/brave
 URxvt.matcher.button: 1
