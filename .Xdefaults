@@ -23,9 +23,29 @@ URxvt*color15: #FFFFFF
 URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
 
+URxvt.depth: 32
+URxvt.internalBorder: 10
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+URxvt.urgentOnBell: true
+
 URxvt*scrollBar:false
 URxvt*scrollBar_right: false
+
+
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: command:\033[1;5A
+URxvt.keysym.Control-Down: command:\033[1;5B
+URxvt.keysym.Control-Right: command:\033[1;5C
+URxvt.keysym.Control-Left: command:\033[1;5D
 
-URxvt.perl-ext-common: selection-to-clipboard
+URxvt.perl-ext-common: default,selection-to-clipboard,clipboard,matcher,url-select,keyboard-select
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: /var/lib/snapd/snap/bin/brave
+URxvt.matcher.button: 1
